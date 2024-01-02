@@ -2,11 +2,12 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Tenglama</title>
-  <style>
-    html,
+  <title>NAMANGAN MUHANDISLIK-QURILISH INSTITUTI| AXBOROT TIZIMLARI VA TEXNOLOGIYALARI KAFEDRASI</title>
+ <style>
+ html,
 body {
   height: 100%;
+
 }
 
 .bg {
@@ -29,7 +30,7 @@ body {
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
+  max-width: 80%;
   margin: auto;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -39,6 +40,7 @@ body {
   border-radius: 3px;
 }
 .form-signin h1 {
+    font-size: 2.1em;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -55,6 +57,7 @@ body {
   padding: 15px;
 }
 .form-signin form .btn {
+font-size: 2.1em;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -71,10 +74,12 @@ body {
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
 }
 .form-signin .copyright {
+font-size: 0.8em;
   text-align: center;
   color: rgba(255, 255, 255, 0.65);
 }
 .form-signin .form-control {
+font-size: 2.1em;
   background: rgba(255, 255, 255, 0.9);
 }
 .form-signin .form-check {
@@ -83,9 +88,11 @@ body {
   color: rgba(255, 255, 255, 0.65);
 }
 .form-signin .form-check label {
-  font-size: 0.9em;
+    font-size: 2.1em;
+  font-size: 3.5em;
 }
 .form-signin .form-check input {
+    font-size: 2.1em;
   margin-right: 0.5em;
 }
 .form-signin .form-check input:checked {
@@ -96,16 +103,19 @@ body {
   z-index: 2;
 }
 .form-signin input[type=email] {
+    font-size: 2.1em;
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 .form-signin input[type=password] {
+    font-size: 2.1em;
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-  </style>
+
+</style>
 
 </head>
 <body>
@@ -119,33 +129,45 @@ body {
 </div>
 
   <main class="form-signin">
-    
-      <h1 class="h3">Jaxongir</h1>
-    
+
+      <h1 class="h1">CHIZIQSIZ ALGEBRAIK VA TRANTSENDENT TENGLAMALARNI<BR> TAQRIBIY YECHISH DASTURI</h1>
+
     <form method="post" action="{% url 'home' %}">
 
 
       <div class="form-floating">
               {% csrf_token %}
         <input type="text" class="form-control" id="floatingInput"  name="expression" placeholder="x*x*x+x-1" required>
-        <label for="floatingInput">ifodani kiriting</label>
+        <label for="floatingInput">Ifodani kiriting!</label>
       </div>
 
-    {% if result %}
+
+
+
+      </div>
+      <button class="w-100 btn btn-lg" type="post">HISOBLASH</button>
+
+
+
+          {% if result %}
       <div class="form-floating">
 
-    <input type="text" class="form-control"  id="expression" value="{{ result }}"  required>
+    <input type="text" class="form-control"  id="expression" value="{{ result }}"  >
         <label for="floatingInput" >Tenglamaning ildizi:</label> </p>
 </div>
         {% endif %}
 
-
-      </div>
-      <button class="w-100 btn btn-lg" type="post">hisoblash</button>
     </form>
-          <p class="copyright">&copy; 2024</p>
+          <p class="copyright"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+  <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
+</svg> nurmamatovjaxongirmirzo@gmail.com</p>
+
+          <p class="copyright"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+  <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+</svg> @Jaxongir_Nurmamatov</p>
   </main>
 <!-- partial -->
-  
+
 </body>
 </html>
